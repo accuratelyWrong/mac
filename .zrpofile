@@ -1,0 +1,9 @@
+if [[ `arch` == "i386" ]]
+then
+  echo "setup homebrew for i386"
+  eval "$(/usr/local/homebrew/bin/brew shellenv)"
+elif [[ `arch` == "arm64" ]]
+then
+  echo "setup homebrew for arm64"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
